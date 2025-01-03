@@ -1,0 +1,5 @@
+* ulrickhansen.dev og eller .com ???domæne køb hos simply.com
+
+* Projekted skal bare bygges unden et framework og React
+* Brug Tailwind CSS ? 
+* Brug typestript, se hvordan det kan bruges her https://www.typescriptlang.org/ (OBS har det installeret via VS code :))
