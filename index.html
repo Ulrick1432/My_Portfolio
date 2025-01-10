@@ -1,124 +1,125 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Ulricks Portfolio</title>
-    <link href="./src/output.css" rel="stylesheet">
-    <link href="./src/icons.css" rel="stylesheet">
-    <link href="./index.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<Body class="flex flex-col max-w-4xl m-auto bg-background text-primary">
-    <header class="flex flex-col bg-background fixed top-0 left-0 right-0 max-w-4xl m-auto border-b-8">
-        <h1 class="text-center text-lg mb-2 mt-2">Ulrick Preben Hansen</h1>
-        <nav class="flex flex-row space-x-4 mb-2">
-            <ul role="list" class="flex space-x-8 justify-center w-full ">
-                <li class="p-1 border rounded-lg hover:shadow-lg" >
-                    <a href="index.html">About me</a>
-                </li>
-                <li class="p-1 border rounded-lg hover:shadow-lg">
-                    <a href="#project-container">Projects</a>
-                </li>
-                <li class="p-1 border rounded-lg hover:shadow-lg">
-                    <a href="#skills-container">Skills</a>
-                </li>
-                <li class="p-1 border rounded-lg hover:shadow-lg">
-                    <a href="./contact_page.html">Contakt</a>
-                </li>
-                <div class="p-1 border rounded-lg hover:shadow-lg">
-                    <input type="checkbox" id="input-color-switch">
-                    <label for="input-color-switch" class="cursor-pointer">Dark Mode</label>
-                </div>
-            </ul>
-        </nav>
-    </header>
-    <main class="mt-28">
-        <section id="about-me" class="flex md:flex-row items-center md:space-x-8 border-b-8 pb-4">
-            <div class="md:w-1/2">
-                <h2 class="text-center text-lg font-bold">About me</h2>
-                <p class="text-justify mt-4">
-                    Hey my name is Ulrick and I am from Denmark and live in a provincial town called Næstved.<br>
-                    In my freetime, I like to learn about programming and, in general, I enjoy learning new things and understanding how they work.<br>
-                    I like to play sports such as padel tennis, football/soccer, and ping pong, which keeps me fresh, happy, and motivated.<br>
-                    I also enjoy fishing and playing PC games, which I find relaxing.
-                </p>
-            </div>
-            <div class="md:w-1/2 flex justify-center">
-                <img
-                style="height: 250px; width: auto;"
-                class="rounded-lg shadow-lg md:mt-0"
-                src="../resources/Profilfoto.jpeg"
-                alt="Photo of Ulrick Hansen"
-                >
-            </div>
-        </section>
-        <section id="my-projects" class="flex flex-row mt-16 md:flex-row items-center md:space-x-8">
-            <div class="md:w-1/2">
-                <h2 class="text-center font-semibold text-lg">My Projects</h2>
-                <details class="group border rounded-md p-4">
-                    <summary class="cursor-pointer font-semibold text-lg flex items-center">
-                        <span>Message generator</span>
-                        <span class="ml-auto transition-transform group-open:rotate-90"></span>
-                    </summary>
-                    <div class="mt-2 text-gray-600">
-                        Generates a random Message using JavaScript
+    <head>
+        <title>Ulricks Portfolio</title>
+        <link href="./src/output.css" rel="stylesheet">
+        <link href="./src/icons.css" rel="stylesheet">
+        <link href="./index.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <Body class="flex flex-col border-x-8 max-w-4xl m-auto bg-background text-primary">
+        <header class="flex flex-col bg-background fixed top-0 left-0 right-0 max-w-4xl m-auto border-8">
+            <h1 class="text-center text-lg mb-2 mt-2">Ulrick Preben Hansen</h1>
+            <nav class="flex flex-row space-x-4 mb-2">
+                <ul role="list" class="flex space-x-8 justify-center w-full ">
+                    <li class="p-1 border rounded-lg hover:shadow-lg" >
+                        <a href="index.html">About me</a>
+                    </li>
+                    <li class="p-1 border rounded-lg hover:shadow-lg">
+                        <a href="#project-container">Projects</a>
+                    </li>
+                    <li class="p-1 border rounded-lg hover:shadow-lg">
+                        <a href="#skills-container">Skills</a>
+                    </li>
+                    <li class="p-1 border rounded-lg hover:shadow-lg">
+                        <a href="./contact_page.html">Contakt</a>
+                    </li>
+                    <div class="p-1 border rounded-lg hover:shadow-lg">
+                        <input type="checkbox" id="input-color-switch">
+                        <label for="input-color-switch" class="cursor-pointer">Dark Mode</label>
                     </div>
-                </details>
-                <details class="group border rounded-md p-4">
-                    <summary class="cursor-pointer font-semibold text-lg flex items-center">
-                        <span>Homepage - "the public free football club"</span>
-                        <span class="ml-auto transition-transform group-open:rotate-90"></span>
-                    </summary>
-                    <div class="mt-2 text-gray-600">
-                        My first self-build webpage with fictional subject
-                    </div>
-                </details>
-                <details class="group border rounded-md p-4">
-                    <summary class="cursor-pointer font-semibold text-lg flex items-center">
-                        <span>Fictional Bilbasen homepage</span>
-                        <span class="ml-auto transition-transform group-open:rotate-90"></span>
-                    </summary>
-                    <div class="mt-2 text-gray-600">
-                        My first self-buid reblica of bilbasen.dk
-                    </div>
-                </details>
-                <details class="group border rounded-md p-4">
-                    <summary class="cursor-pointer font-semibold text-lg flex items-center">
-                        <span>Cheatsheet HTML CSS</span>
-                        <span class="ml-auto transition-transform group-open:rotate-90"></span>
-                    </summary>
-                    <div class="mt-2 text-gray-600">
-                        Cheatsheet of HTML Tables, Orther HTML tags, CSS Selectors + specificity and Common CSS properties
-                    </div>
-                </details>
-                <details class="group border rounded-md p-4">
-                    <summary class="cursor-pointer font-semibold text-lg flex items-center">
-                        <span>Cheatsheet CSS styles</span>
-                        <span class="ml-auto transition-transform group-open:rotate-90"></span>
-                    </summary>
-                    <div class="mt-2 text-gray-600">
-                        Cheatsheet of CSS box model, CSS display + positioning, CSS colors and Typography
-                    </div>
-                </details>
-            </div>
-            <div id="skills" class="md:w-1/2">
-                <ul class="flex flex-col items-center border-8 rounded-lg " >
-                    <li class="img_html">Fundamentals of HTML</li>
-                    <li class="img_css">Fundamentals of CSS</li>
-                    <li class="img_cloud">Deploying Websites</li>
-                    <li class="img_css">Improved Styling with CSS</li>
-                    <li class="img_js">Fundamentals of JavaScript</li>
-                    <li class="img_git">Git version control</li>
-                    <li class="img_github">Github</li>
-                    <li class="img_js">JavaScript interactive</li>
-                    <li class="img_cloud">Making A Website Accessible</li>
                 </ul>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p class="text-center">Made by UPH</p>
-    </footer>
-</Body>
+            </nav>
+        </header>
+        <main class="mt-28">
+            <section id="about-me" class="flex md:flex-row items-center md:space-x-8 border-b-8 pb-4">
+                <div class="md:w-1/2">
+                    <h2 class="text-center text-lg font-bold">About me</h2>
+                    <p class="text-justify mt-4">
+                        Hey my name is Ulrick and I am from Denmark and live in a provincial town called Næstved.<br>
+                        In my freetime, I like to learn about programming and, in general, I enjoy learning new things and understanding how they work.<br>
+                        I like to play sports such as padel tennis, football/soccer, and ping pong, which keeps me fresh, happy, and motivated.<br>
+                        I also enjoy fishing and playing PC games, which I find relaxing.
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img
+                    style="height: 250px; width: auto;"
+                    class="rounded-lg shadow-lg md:mt-0"
+                    src="../resources/Profilfoto.jpeg"
+                    alt="Photo of Ulrick Hansen"
+                    >
+                </div>
+            </section>
+            <section id="my-projects" class="flex flex-row mt-16 md:flex-row items-center md:space-x-8">
+                <div class="md:w-1/2">
+                    <h2 class="text-center font-semibold text-lg">My Projects</h2>
+                    <details class="group border rounded-md p-4">
+                        <summary class="cursor-pointer font-semibold text-lg flex items-center">
+                            <span>Message generator</span>
+                            <span class="ml-auto transition-transform group-open:rotate-90"></span>
+                        </summary>
+                        <div class="mt-2 text-gray-600">
+                            Generates a random Message using JavaScript
+                        </div>
+                    </details>
+                    <details class="group border rounded-md p-4">
+                        <summary class="cursor-pointer font-semibold text-lg flex items-center">
+                            <span>Homepage - "the public free football club"</span>
+                            <span class="ml-auto transition-transform group-open:rotate-90"></span>
+                        </summary>
+                        <div class="mt-2 text-gray-600">
+                            My first self-build webpage with fictional subject
+                        </div>
+                    </details>
+                    <details class="group border rounded-md p-4">
+                        <summary class="cursor-pointer font-semibold text-lg flex items-center">
+                            <span>Fictional Bilbasen homepage</span>
+                            <span class="ml-auto transition-transform group-open:rotate-90"></span>
+                        </summary>
+                        <div class="mt-2 text-gray-600">
+                            My first self-buid reblica of bilbasen.dk
+                        </div>
+                    </details>
+                    <details class="group border rounded-md p-4">
+                        <summary class="cursor-pointer font-semibold text-lg flex items-center">
+                            <span>Cheatsheet HTML CSS</span>
+                            <span class="ml-auto transition-transform group-open:rotate-90"></span>
+                        </summary>
+                        <div class="mt-2 text-gray-600">
+                            Cheatsheet of HTML Tables, Orther HTML tags, CSS Selectors + specificity and Common CSS properties
+                        </div>
+                    </details>
+                    <details class="group border rounded-md p-4">
+                        <summary class="cursor-pointer font-semibold text-lg flex items-center">
+                            <span>Cheatsheet CSS styles</span>
+                            <span class="ml-auto transition-transform group-open:rotate-90"></span>
+                        </summary>
+                        <div class="mt-2 text-gray-600">
+                            Cheatsheet of CSS box model, CSS display + positioning, CSS colors and Typography
+                        </div>
+                    </details>
+                </div>
+                <div id="skills" class="md:w-1/2">
+                    <ul class="flex flex-col items-center border-8 rounded-lg " >
+                        <li class="img_html">Fundamentals of HTML</li>
+                        <li class="img_css">Fundamentals of CSS</li>
+                        <li class="img_cloud">Deploying Websites</li>
+                        <li class="img_css">Improved Styling with CSS</li>
+                        <li class="img_js">Fundamentals of JavaScript</li>
+                        <li class="img_git">Git version control</li>
+                        <li class="img_github">Github</li>
+                        <li class="img_js">JavaScript interactive</li>
+                        <li class="img_cloud">Making A Website Accessible</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="text-center">Made by UPH</p>
+        </footer>
+    </Body>
 </html>
