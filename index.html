@@ -10,30 +10,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <Body class="flex flex-col border-8 rounded-lg max-w-4xl m-auto bg-background text-primary">
-        <header class="flex flex-col bg-background fixed top-0 left-0 right-0 max-w-4xl m-auto border-8 rounded-t-lg">
-            <h1 class="text-center text-lg mb-2 mt-2">Ulrick Preben Hansen</h1>
-            <nav class="flex flex-row space-x-4 mb-2">
-                <ul role="list" class="flex space-x-8 justify-center w-full ">
-                    <li class="p-1 border rounded-lg hover:shadow-lg" >
-                        <a href="index.html">About me</a>
-                    </li>
-                    <li class="p-1 border rounded-lg hover:shadow-lg">
-                        <a href="#project-container">Projects</a>
-                    </li>
-                    <li class="p-1 border rounded-lg hover:shadow-lg">
-                        <a href="#skills-container">Skills</a>
-                    </li>
-                    <li class="p-1 border rounded-lg hover:shadow-lg">
-                        <a href="./contact_page.html">Contakt</a>
-                    </li>
-                    <div class="p-1 border rounded-lg hover:shadow-lg">
-                        <input type="checkbox" id="input-color-switch">
-                        <label for="input-color-switch" class="cursor-pointer">Dark Mode</label>
-                    </div>
-                </ul>
-            </nav>
-        </header>
+    <Body class="flex flex-col items-center border-8 rounded-lg max-w-4xl m-auto bg-background text-primary">
+        <div class="fixed bg-background top-0 left-0 right-0 max-w-4xl m-auto">
+            <header class="border-8 rounded-t-lg">
+                <h1 class="text-center text-lg mb-2 mt-2">Ulrick Preben Hansen</h1>
+                <nav class="flex flex-row space-x-4 mb-2">
+                    <ul role="list" class="flex space-x-8 justify-center w-full ">
+                        <li class="p-1 border rounded-lg hover:shadow-lg" >
+                            <a href="index.html">About me</a>
+                        </li>
+                        <li class="p-1 border rounded-lg hover:shadow-lg">
+                            <a href="#project-container">Projects</a>
+                        </li>
+                        <li class="p-1 border rounded-lg hover:shadow-lg">
+                            <a href="#skills-container">Skills</a>
+                        </li>
+                        <li class="p-1 border rounded-lg hover:shadow-lg">
+                            <a href="./contact_page.html">Contact</a>
+                        </li>
+                        <div class="p-1 border rounded-lg hover:shadow-lg">
+                            <input type="checkbox" id="input-color-switch">
+                            <label for="input-color-switch" class="cursor-pointer">Dark Mode</label>
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
         <main class="mt-28">
             <section id="about-me" class="flex md:flex-row items-center md:space-x-8 border-b-8 pb-4">
                 <div class="ml-8 md:w-1/2">
