@@ -12,10 +12,36 @@
 
     <Body class="flex flex-col items-center border-8 rounded-lg max-w-4xl m-auto bg-background text-primary">
         <div class="fixed bg-background top-0 left-0 right-0 max-w-4xl m-auto">
-            <header class="border-8 rounded-t-lg">
-                <h1 class="text-center text-lg mb-2 mt-2">Ulrick Preben Hansen</h1>
+            <header class="max-sm:flex max-sm:items-center max-sm:justify-between border-8 rounded-t-lg">
+                <h1 class="text-lg mb-2 mt-2 flex-grow text-center">Ulrick Preben Hansen</h1>
                 <nav class="flex flex-row space-x-4 mb-2">
-                    <ul role="list" class="flex space-x-8 justify-center w-full ">
+                    <ul role="list" hidden class="sidebar flex-col items-start justify-start absolute right-0 top-0 mt-2 mr-2 z-50 bg-white backdrop-blur-md shadow-lg rounded-lg">
+                        <li class="p-2 border-b w-full flex justify-center hover:bg-gray-100 transition-colors duration-200 rounded-lg">
+                            <a href="#" class="menu-close">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="p-2 border-b w-full hover:bg-gray-100 transition-colors duration-200">
+                            <a href="index.html" class="w-full text-center">About me</a>
+                        </li>
+                        <li class="p-2 border-b w-full hover:bg-gray-100 transition-colors duration-200">
+                            <a href="#project-container" class="w-full text-center">Projects</a>
+                        </li>
+                        <li class="p-2 border-b w-full hover:bg-gray-100 transition-colors duration-200">
+                            <a href="#skills-container" class="w-full text-center">Skills</a>
+                        </li>
+                        <li class="p-2 border-b w-full hover:bg-gray-100 transition-colors duration-200">
+                            <a href="./contact_page.html" class="w-full text-center">Contact</a>
+                        </li>
+                        <div class="p-2 w-full flex justify-center hover:bg-gray-100 transition-colors duration-200 rounded-lg">
+                            <input type="checkbox" id="input-color-switch" class="mr-2">
+                            <label for="input-color-switch" class="cursor-pointer">Dark Mode</label>
+                        </div>
+                    </ul>
+                    <!------------------------------------------------------------------------------->
+                    <ul role="list" class="sm:flex hidden hiddenspace-x-8 justify-center w-full ">
                         <li class="p-1 border rounded-lg hover:shadow-lg bg" >
                             <a href="index.html">About me</a>
                         </li>
@@ -34,12 +60,13 @@
                         </div>
                     </ul>
                 </nav>
+                <a href="#" class="menu-open sm:hidden"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
             </header>
         </div>
 
         <main class="mt-28">
-            <section id="about-me" class="flex md:flex-row items-center md:space-x-8 border-b-8 pb-4">
-                <div class="ml-8 md:w-1/2">
+            <section id="about-me" class="flex flex-col md:flex-row items-center md:space-x-8 border-b-8 pb-4">
+                <div class="ml-8 mr-8 md:w-1/2">
                     <h2 class="text-center text-lg font-bold">About me</h2>
                     <p class="mt-4">
                         Hey my name is Ulrick and I am from Denmark and live in a provincial town called Næstved.<br>
@@ -48,12 +75,12 @@
                         I also enjoy fishing and playing PC games, which I find relaxing.
                     </p>
                 </div>
-                <div class="md:w-1/2 flex justify-center">
+                <div class="md:w-1/2 flex justify-center mt-4 md:mt-0">
                     <img
-                    style="height: 250px; width: auto;"
-                    class="rounded-lg shadow-lg md:mt-0"
+                    class="rounded-lg shadow-lg"
                     src="../resources/Profilfoto.jpeg"
                     alt="Photo of Ulrick Hansen"
+                    style="height: 250px; width: auto;"
                     >
                 </div>
             </section>

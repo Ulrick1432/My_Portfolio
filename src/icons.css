@@ -1,24 +1,24 @@
 li.img_html::marker {
-  content: url(../resources/17pxHTML5_logo_and_wordmark.svg.png);
+  content: url(../resources/skillsImages/17pxHTML5_logo_and_wordmark.svg.png);
 
 }
 
 li.img_css::marker {
-  content: url(../resources/15px-CSS3_logo_and_wordmark.svg.png);   
+  content: url(../resources/skillsImages/15px-CSS3_logo_and_wordmark.svg.png);   
 }
 
 li.img_cloud::marker {
-  content: url(../resources/15px\ Microsoft_Office_OneDrive_\(2019–present\).svg.png);   
+  content: url(../resources/skillsImages/15px\ Microsoft_Office_OneDrive_\(2019–present\).svg.png);   
 }
 
 li.img_js::marker {
-  content: url(../resources/15px\ Unofficial_JavaScript_logo_2.svg.png);
+  content: url(../resources/skillsImages/15px\ Unofficial_JavaScript_logo_2.svg.png);
 }
 
 li.img_git::marker {
-  content: url(../resources/15\ pxGit-Icon-1788C.png);
+  content: url(../resources/skillsImages/15\ pxGit-Icon-1788C.png);
 }
 
 li.img_github::marker {
-  content: url(../resources/Github\ logo\ 15px.png);
+  content: url(../resources/skillsImages/Github\ logo\ 15px.png);
 }
