@@ -57,57 +57,67 @@
                     >
                 </div>
             </section>
-            <section id="my-projects" class="flex flex-row mt-16 md:flex-row items-center md:space-x-8">
-                <div class="md:w-1/2">
-                    <h2 class="text-center font-semibold text-lg">My Projects</h2>
-                    <details class="group border rounded-md p-4">
-                        <summary class="cursor-pointer font-semibold text-lg flex items-center">
-                            <span>Message generator</span>
-                            <span class="ml-auto transition-transform group-open:rotate-90"></span>
+            <section id="my-projects" class="flex flex-col gap-12 mt-16 md:flex-row md:gap-8 items-center px-4 md:px-16">
+                <!-- Projects Section -->
+                <div class="w-full md:w-1/2 space-y-6">
+                    <h2 class="text-center font-bold text-xl md:text-2xl text-gray-800">My Projects</h2>
+                    <details id="visualize-algorithms" class="group border border-gray-300 rounded-md p-4 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <summary class="cursor-pointer font-semibold text-lg flex items-center text-gray-800">
+                            <span>Visualize algorithms</span>
+                            <span class="ml-auto transition-transform group-open:rotate-90">⮞</span>
+                        </summary>
+                    </details>
+                    <details class="group border border-gray-300 rounded-md p-4 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <summary class="cursor-pointer font-semibold text-lg flex items-center text-gray-800">
+                            <span>Message Generator</span>
+                            <span class="ml-auto transition-transform group-open:rotate-90">⮞</span>
                         </summary>
                         <div class="mt-2 text-gray-600">
-                            Generates a random Message using JavaScript
+                            Generates a random message using JavaScript.
                         </div>
                     </details>
-                    <details class="group border rounded-md p-4">
-                        <summary class="cursor-pointer font-semibold text-lg flex items-center">
-                            <span>Homepage - "the public free football club"</span>
-                            <span class="ml-auto transition-transform group-open:rotate-90"></span>
+                    <details class="group border border-gray-300 rounded-md p-4 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <summary class="cursor-pointer font-semibold text-lg flex items-center text-gray-800">
+                            <span>Homepage - "The Public Free Football Club"</span>
+                            <span class="ml-auto transition-transform group-open:rotate-90">⮞</span>
                         </summary>
                         <div class="mt-2 text-gray-600">
-                            My first self-build webpage with fictional subject
+                            My first self-built webpage with a fictional subject.
                         </div>
                     </details>
-                    <details class="group border rounded-md p-4">
-                        <summary class="cursor-pointer font-semibold text-lg flex items-center">
-                            <span>Fictional Bilbasen homepage</span>
-                            <span class="ml-auto transition-transform group-open:rotate-90"></span>
+                    <details class="group border border-gray-300 rounded-md p-4 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <summary class="cursor-pointer font-semibold text-lg flex items-center text-gray-800">
+                            <span>Fictional Bilbasen Homepage</span>
+                            <span class="ml-auto transition-transform group-open:rotate-90">⮞</span>
                         </summary>
                         <div class="mt-2 text-gray-600">
-                            My first self-buid reblica of bilbasen.dk
+                            My first self-built replica of bilbasen.dk.
                         </div>
                     </details>
-                    <details class="group border rounded-md p-4">
-                        <summary class="cursor-pointer font-semibold text-lg flex items-center">
+                    <details class="group border border-gray-300 rounded-md p-4 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <summary class="cursor-pointer font-semibold text-lg flex items-center text-gray-800">
                             <span>Cheatsheet HTML CSS</span>
-                            <span class="ml-auto transition-transform group-open:rotate-90"></span>
+                            <span class="ml-auto transition-transform group-open:rotate-90">⮞</span>
                         </summary>
                         <div class="mt-2 text-gray-600">
-                            Cheatsheet of HTML Tables, Orther HTML tags, CSS Selectors + specificity and Common CSS properties
+                            Cheatsheet of HTML tables, other tags, CSS selectors, and properties.
                         </div>
                     </details>
-                    <details class="group border rounded-md p-4">
-                        <summary class="cursor-pointer font-semibold text-lg flex items-center">
-                            <span>Cheatsheet CSS styles</span>
-                            <span class="ml-auto transition-transform group-open:rotate-90"></span>
+                    <details class="group border border-gray-300 rounded-md p-4 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                        <summary class="cursor-pointer font-semibold text-lg flex items-center text-gray-800">
+                            <span>Cheatsheet CSS Styles</span>
+                            <span class="ml-auto transition-transform group-open:rotate-90">⮞</span>
                         </summary>
                         <div class="mt-2 text-gray-600">
-                            Cheatsheet of CSS box model, CSS display + positioning, CSS colors and Typography
+                            Cheatsheet of CSS box model, positioning, colors, and typography.
                         </div>
                     </details>
                 </div>
-                <div id="skills" class="md:w-1/2">
-                    <ul class="flex flex-col items-center border-8 rounded-lg " >
+            
+                <!-- Skills Section -->
+                <div id="skills" class="w-full md:w-1/2 space-y-4">
+                    <h3 class="text-center font-bold text-xl md:text-2xl text-gray-800">Skills</h3>
+                    <ul class="grid grid-cols-2 gap-4 md:gap-6 border border-gray-300 rounded-lg p-6 bg-gray-50 shadow-md">
                         <li class="img_html">Fundamentals of HTML</li>
                         <li class="img_css">Fundamentals of CSS</li>
                         <li class="img_cloud">Deploying Websites</li>
@@ -116,13 +126,15 @@
                         <li class="img_git">Git version control</li>
                         <li class="img_github">Github</li>
                         <li class="img_js">JavaScript interactive</li>
-                        <li class="img_cloud">Making A Website Accessible</li>
+                        <li class="img_cloud">Making A Website 
                     </ul>
                 </div>
             </section>
+            
         </main>
         <footer>
             <p class="text-center">Made by UPH</p>
         </footer>
     </Body>
+    <script type="module" src="./src/eventListener.js"></script>
 </html>
