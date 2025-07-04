@@ -1,4 +1,29 @@
+/*
+  Hvad bruges denne fil til? 
+  Denn fil bruges til at lave custom tailwind css klasser,
+  en klasse til flere ens element, i stedet for at man skal, 
+  skrive de samme klasser i elementer som skal være ens.
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+  Tailwind kræver at egendefinerede klasser med @apply skrives inde i en @layer, 
+  hvis de skal få adgang til Tailwinds theme-konfiguration.
+  (som er i tailwind.config.js)
+*/
+@layer components {
+  .project {
+    @apply flex flex-col border border-gray-300 rounded-md bg-secondaryBackground m-4 p-4 shadow-sm hover:shadow-lg transition-shadow duration-300;
+  }
+  
+  .project-header {
+    @apply font-bold text-lg;
+  }
+  .btn-go-to-project {
+    @apply border border-gray-300 rounded-md text-buttonTextColor bg-buttonColor select-none hover:bg-hoverColor;
+  }  
+}
 

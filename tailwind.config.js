@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'background': '#1A132F',
-        'secondaryBackground': '#2B2046',
-        'primaryText': '#D9D9D9',
-        'buttonColor': '#9C27B0',
-        'hoverColor': '#BA68C8',
+        'background': '#0e0e15',
+        'secondaryBackground': '#191724',
+        'primaryText': '#fcfbfd',
+        'buttonColor': '#6d3ca7',
+        'hoverColor': '#26C6DA',
         'buttonTextColor': '#FFFFFF',
-        'secondary': '#41469E'
+        'hoverColor': '#cb92ff'
       },
     },
   },

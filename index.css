@@ -2,3 +2,17 @@ p, h2 {
   margin: 0px;
   padding: 0px;
 }
+
+h1, h2, h3, h4, h5, a, p, label, span, li {
+  color: #E0E0E0;
+}
+
+.project {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.test {
+  color: #6d3ca7;
+}
+

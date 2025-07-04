@@ -1,3 +1,7 @@
+/*
+  Denne fil bruges til at sætte logo ved de diverse skills i skills sektionen
+*/
+
 li.img_html::marker {
   content: url(../resources/skillsImages/17pxHTML5_logo_and_wordmark.svg.png);
 

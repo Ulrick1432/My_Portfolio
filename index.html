@@ -5,16 +5,18 @@
         <link href="./src/output.css" rel="stylesheet">
         <link href="./src/icons.css" rel="stylesheet">
         <link href="./index.css" rel="stylesheet">
+        <link href="./src/input.css" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <Body class="flex flex-col items-center border-8 rounded-lg max-w-4xl m-auto bg-background text-primary">
+    <Body class="flex flex-col items-center border-8 rounded-lg max-w-4xl m-auto bg-background ">
         <div class="fixed bg-background top-0 left-0 right-0 max-w-4xl m-auto">
-            <header class="max-sm:flex max-sm:items-center max-sm:justify-between border-8 rounded-t-lg">
-                <h1 class="text-lg mb-2 mt-2 flex-grow text-center">Ulrick Preben Hansen</h1>
-                <nav class="flex flex-row space-x-4 mb-2">
+        <!-- HEADER --> 
+            <header class="flex max-sm:flex  max-sm:items-center max-sm:justify-between border-8 rounded-t-lg">
+                <h1 class="flex-grow text-lg mb-2 mt-2 text-center">Ulrick Preben Hansen</h1>
+                <nav class="flex flex-grow flex-row space-x-4 mb-2 mt-2">
                     <ul role="list" hidden class="sidebar flex-col items-start justify-start absolute right-0 top-0 mt-2 mr-2 z-50 bg-white backdrop-blur-md shadow-lg rounded-lg">
                         <li class="p-2 border-b w-full flex justify-center hover:bg-gray-100 transition-colors duration-200 rounded-lg">
                             <a href="#" class="menu-close">
@@ -23,8 +25,8 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="p-2 border-b w-full hover:bg-gray-100 transition-colors duration-200">
-                            <a href="index.html" class="w-full text-center">About me</a>
+                        <li class="p-2 border-b w-full hover:bg-gray-100 transition-colors duration-200 ">
+                            <a href="index.html" class="w-full text-center ">About me</a>
                         </li>
                         <li class="p-2 border-b w-full hover:bg-gray-100 transition-colors duration-200">
                             <a href="#project-container" class="w-full text-center">Projects</a>
@@ -41,7 +43,7 @@
                         </div>
                     </ul>
                     <!------------------------------------------------------------------------------->
-                    <ul role="list" class="sm:flex hidden hiddenspace-x-8 justify-center w-full ">
+                    <ul role="list" class=" sm:flex hidden hiddenspace-x-8 w-full justify-evenly">
                         <li class="p-1 border rounded-lg hover:shadow-lg bg" >
                             <a href="index.html">About me</a>
                         </li>
@@ -63,101 +65,96 @@
                 <a href="#" class="menu-open sm:hidden"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
             </header>
         </div>
-
+        <!-- MAIN --> 
         <main class="mt-28">
+            <!-- ABOUT ME --> 
             <section id="about-me" class="flex flex-col md:flex-row items-center md:space-x-8 border-b-8 pb-4">
+                <div class="md:w-1/2 flex justify-center mt-4 md:mt-0">
+                    <img
+                    class="rounded-full shadow-lg"
+                    src="../resources/Profilfoto.jpeg"
+                    alt="Photo of Ulrick Hansen"
+                    style="height: 250px; width: auto;"
+                    >
+                </div>
                 <div class="ml-8 mr-8 md:w-1/2">
                     <h2 class="text-center text-lg font-bold">About me</h2>
-                    <p class="mt-4">
+                    <p class="mt-4 text-hoverColor">
                         Hey my name is Ulrick and I am from Denmark and live in a provincial town called Næstved.<br>
                         In my freetime, I like to learn about programming and, in general, I enjoy learning new things and understanding how they work.<br>
                         I like to play sports such as padel tennis, football/soccer, and ping pong, which keeps me fresh, happy, and motivated.<br>
                         I also enjoy fishing and playing PC games, which I find relaxing.
                     </p>
                 </div>
-                <div class="md:w-1/2 flex justify-center mt-4 md:mt-0">
-                    <img
-                    class="rounded-lg shadow-lg"
-                    src="../resources/Profilfoto.jpeg"
-                    alt="Photo of Ulrick Hansen"
-                    style="height: 250px; width: auto;"
-                    >
-                </div>
             </section>
-            <section id="my-projects" class="flex flex-col gap-12 mt-16 md:flex-row md:gap-8 items-center px-4 md:px-16">
+
+            <section class="flex flex-col gap-12 mt-16 md:flex-row md:gap-8 items-center px-4 md:px-16"></sectionclass>>
                 <!-- Projects Section -->
-                <div class="w-full md:w-1/2 space-y-6">
+                <div class="w-full space-y-6">
                     <h2 class="text-center font-bold text-xl md:text-2xl ">My Projects</h2>
-                    <details id="visualize-algorithms" class="group border border-gray-300 rounded-md p-4 shadow-sm hover:shadow-lg transition-shadow duration-300">
-                        <summary class="cursor-pointer font-semibold text-lg flex items-center ">
-                            <span>Visualize algorithms</span>
-                            <span class="ml-auto transition-transform group-open:rotate-90">⮞</span>
-                        </summary>
-                    </details>
-                    <details class="group border border-gray-300 rounded-md p-4 shadow-sm hover:shadow-lg transition-shadow duration-300">
-                        <summary class="cursor-pointer font-semibold text-lg flex items-center ">
-                            <span>Message Generator</span>
-                            <span class="ml-auto transition-transform group-open:rotate-90">⮞</span>
-                        </summary>
-                        <div class="mt-2 text-gray-600">
-                            Generates a random message using JavaScript.
+                    <div class="projects-container grid grid-cols-2 justify-around">
+                        <!-- Projects -->
+                        <div id="visualize-algorithms" class="project">
+                            <img class="project-image" src="./resources/DefaultImage.png">
+                            <h4 class="project-header">Visualize algorithms</h4>
+                            <p class="project-description">Description: Visualize how some algorithms work.</p>
+                            <p class="project-tech"><span class="font-semibold">Tech:</span> HTML, CSS, JavaScript</p>
+                            <button id="btn-visualize-algorithms" class="btn-go-to-project" onclick="">Go to project</button>
                         </div>
-                    </details>
-                    <details class="group border border-gray-300 rounded-md p-4 shadow-sm hover:shadow-lg transition-shadow duration-300">
-                        <summary class="cursor-pointer font-semibold text-lg flex items-center ">
-                            <span>Homepage - "The Public Free Football Club"</span>
-                            <span class="ml-auto transition-transform group-open:rotate-90">⮞</span>
-                        </summary>
-                        <div class="mt-2 text-gray-600">
-                            My first self-built webpage with a fictional subject.
+                        <div id="message-generator" class="project">
+                            <img class="project-image" src="./resources/DefaultImage.png">
+                            <h4 class="project-header">Message Generator</h4>
+                            <p class="project-description">Description: Generates a random message using JavaScript.</p>
+                            <p class="project-tech"><span class="font-semibold">Tech:</span> HTML, CSS, JavaScript</p>
+                            <button id="btn-message-generator" class="btn-go-to-project">Go to project</button>
                         </div>
-                    </details>
-                    <details class="group border border-gray-300 rounded-md p-4 shadow-sm hover:shadow-lg transition-shadow duration-300">
-                        <summary class="cursor-pointer font-semibold text-lg flex items-center ">
-                            <span>Fictional Bilbasen Homepage</span>
-                            <span class="ml-auto transition-transform group-open:rotate-90">⮞</span>
-                        </summary>
-                        <div class="mt-2 text-gray-600">
-                            My first self-built replica of bilbasen.dk.
+                        <div id="free-football-club" class="project">
+                            <img class="project-image" src="./resources/DefaultImage.png">
+                            <h4 class="project-header">The Public Free Football Club</h4>
+                            <p class="project-description">Description: My first self-built webpage with a fictional subject..</p>
+                            <p class="project-tech"><span class="font-semibold">Tech:</span> HTML, CSS, JavaScript???</p>
+                            <button id="btn-free-football-club" class="btn-go-to-project">Go to project</button>
                         </div>
-                    </details>
-                    <details class="group border border-gray-300 rounded-md p-4 shadow-sm hover:shadow-lg transition-shadow duration-300">
-                        <summary class="cursor-pointer font-semibold text-lg flex items-center ">
-                            <span>Cheatsheet HTML CSS</span>
-                            <span class="ml-auto transition-transform group-open:rotate-90">⮞</span>
-                        </summary>
-                        <div class="mt-2 text-gray-600">
-                            Cheatsheet of HTML tables, other tags, CSS selectors, and properties.
+                        <div id="fictional-bilbasen" class="project">
+                            <img class="project-image" src="./resources/DefaultImage.png">
+                            <h4 class="project-header">Fictional Bilbasen Homepage</h4>
+                            <p class="project-description">Description: My first self-built replica of bilbasen.dk</p>
+                            <p class="project-tech"><span class="font-semibold">Tech:</span> HTML, CSS, JavaScript???</p>
+                            <button id="btn-fictional-bilbasen" class="btn-go-to-project">Go to project</button>
                         </div>
-                    </details>
-                    <details class="group border border-gray-300 rounded-md p-4 shadow-sm hover:shadow-lg transition-shadow duration-300">
-                        <summary class="cursor-pointer font-semibold text-lg flex items-center ">
-                            <span>Cheatsheet CSS Styles</span>
-                            <span class="ml-auto transition-transform group-open:rotate-90">⮞</span>
-                        </summary>
-                        <div class="mt-2 text-gray-600">
-                            Cheatsheet of CSS box model, positioning, colors, and typography.
+                        <div id="cheatsheet-html-css" class="project">
+                            <img class="project-image" src="./resources/DefaultImage.png">
+                            <h4 class="project-header">Cheatsheet HTML CSS</h4>
+                            <p class="project-description">Description: Cheatsheet of HTML tables, other tags, CSS selectors, and properties.</p>
+                            <p class="project-tech"><span class="font-semibold">Tech:</span> HTML, CSS, JavaScript???</p>
+                            <button id="btn-cheatsheet-html-css" class="btn-go-to-project">Go to project</button>
                         </div>
-                    </details>
-                </div>
-            
-                <!-- Skills Section -->
-                <div id="skills" class="w-full md:w-1/2 space-y-4">
-                    <h3 class="text-center font-bold text-xl md:text-2xl ">Skills</h3>
-                    <ul class="grid grid-cols-2 gap-4 md:gap-6 border rounded-lg p-6 shadow-md">
-                        <li class="img_html">Fundamentals of HTML</li>
-                        <li class="img_css">Fundamentals of CSS</li>
-                        <li class="img_cloud">Deploying Websites</li>
-                        <li class="img_css">Improved Styling with CSS</li>
-                        <li class="img_js">Fundamentals of JavaScript</li>
-                        <li class="img_git">Git version control</li>
-                        <li class="img_github">Github</li>
-                        <li class="img_js">JavaScript interactive</li>
-                        <li class="img_cloud">Making A Website 
-                    </ul>
+                        <div id="cheatsheet-css-styles" class="project">
+                            <img class="project-image" src="./resources/DefaultImage.png">
+                            <h4 class="project-header">Cheatsheet CSS Styles</h4>
+                            <p class="project-description">Description: Cheatsheet of CSS box model, positioning, colors, and typography.</p>
+                            <p class="project-tech"><span class="font-semibold">Tech:</span> HTML, CSS, JavaScript???</p>
+                            <button id="btn-cheatsheet-css-styles" class="btn-go-to-project">Go to project</button>
+                        </div>
+                    </div>
                 </div>
             </section>
-            
+                
+            <!-- Skills Section -->
+            <div id="skills" class="w-full space-y-4">
+                <h3 class="text-center font-bold text-xl md:text-2xl ">Skills</h3>
+                <ul class="grid grid-cols-2 gap-4 md:gap-6 border rounded-lg p-6 shadow-md">
+                    <li class="img_html">Fundamentals of HTML</li>
+                    <li class="img_css">Fundamentals of CSS</li>
+                    <li class="img_cloud">Deploying Websites</li>
+                    <li class="img_css">Improved Styling with CSS</li>
+                    <li class="img_js">Fundamentals of JavaScript</li>
+                    <li class="img_git">Git version control</li>
+                    <li class="img_github">Github</li>
+                    <li class="img_js">JavaScript interactive</li>
+                    <li class="img_cloud">Making A Website </li>
+                </ul>
+            </div>
         </main>
         <footer>
             <p class="text-center">Made by UPH</p>
