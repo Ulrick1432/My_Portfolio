@@ -7,7 +7,7 @@
 ## Explanation of some of the files
 - tailwind.config.js
   - Is used to setup tailwind and set custom colors
-- CNAME
+- CNAME 
   - Used in connection with this project being hosted via GitHub Pages
   - GitHub Pages needs it to be able to associate a custom domain.
   - The file can be deleted if a custom domain is no longer needed or if it is no longer to be hosted at GitHub Pages
